@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quote-box {
+    border-radius: 7px;
+    padding: 2rem 2rem;
+    margin: 2rem;
+    background-color: #c798ed;
+  }
