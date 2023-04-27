@@ -65,3 +65,9 @@ function printQuoteAndAuthor() {
 
   // Llamada a la función
   printQuoteAndAuthor();
+
+  // Botón new-quote
+  const btnNuevaFrase = document.getElementById("new-quote");
+btnNuevaFrase.addEventListener("click", function() {
+  printQuoteAndAuthor();
+});
