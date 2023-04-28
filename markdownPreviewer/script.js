@@ -8,5 +8,10 @@ const preview = document.getElementById('preview');
   }
   
   editor.addEventListener('input', updatePreview);
+
+  preview.innerHTML = marked(editor.value, { breaks: true });
   
-  preview.innerHTML = marked(editor.value); // Mostrar el contenido de muestra al cargar la página
+  window.addEventListener('load', function() {
+    preview.innerHTML = marked(editor.value);
+  });
+  
