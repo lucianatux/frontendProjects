@@ -3,9 +3,9 @@ const editor = document.getElementById('editor');
 const preview = document.getElementById('preview');
 
   function updatePreview() {
-    preview.innerHTML = editor.value;
-    preview.innerHTML = marked(editor.value); 
+    preview.innerHTML = marked(editor.value, { breaks: true });
   }
+  
   
   editor.addEventListener('input', updatePreview);
 
