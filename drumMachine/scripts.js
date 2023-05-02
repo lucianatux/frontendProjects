@@ -10,3 +10,20 @@ drumPads.forEach(pad => {
     audio.play();
   });
 });
+
+document.addEventListener('keydown', event => {
+    // Get the pressed key
+    const key = event.key.toUpperCase();
+    console.log(key);
+    console.log(drumPad);
+    // Find the drum pad with the matching id
+    const drumPad = document.getElementById(key);
+    // If a matching drum pad is found, trigger its audio clip
+    if (drumPad) {
+      const audio = drumPad.querySelector('.clip');
+      audio.currentTime = 0;
+      audio.play();
+    }
+  });
+  
+  
