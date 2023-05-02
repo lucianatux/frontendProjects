@@ -12,45 +12,48 @@
     <div id="drum-machine" class="container">
         <div id="pad-wrap">
            <div class="drum-pad" id="Heater-1">
-            <audio src="./assets/Heater-1.mp3" class="clip" id="Q"></audio>
+            <audio src="./assets/Heater-1.mp3" class="clip" id="Q" data-name="Heater-1"></audio>
             Q
             </div>
            <div class="drum-pad" id="Heater-2">
-            <audio src="./assets/Heater-2.mp3" class="clip" id="W"></audio>
+            <audio src="./assets/Heater-2.mp3" class="clip" id="W" data-name="Heater-2"></audio>
             W
             </div>
            <div class="drum-pad" id="Heater-3">
-            <audio src="./assets/Heater-3.mp3" class="clip" id="E"></audio>
+            <audio src="./assets/Heater-3.mp3" class="clip" id="E" data-name="Heater-3"></audio>
             E
             </div>
            <div class="drum-pad" id="Heater-4">
-            <audio src="./assets/Heater-4.mp3" class="clip" id="A"></audio>
+            <audio src="./assets/Heater-4.mp3" class="clip" id="A" data-name="Heater-4"></audio>
             A
             </div>
            <div class="drum-pad" id="Clap">
-            <audio src="./assets/Clap.mp3" class="clip" id="S"></audio>
+            <audio src="./assets/Clap.mp3" class="clip" id="S" data-name="Clap"></audio>
             S
             </div>
            <div class="drum-pad" id="Open-HH">
-            <audio src="./assets/Open-HH.mp3" class="clip" id="D"></audio>
+            <audio src="./assets/Open-HH.mp3" class="clip" id="D" data-name="Open-HH"></audio>
             D
             </div>
            <div class="drum-pad" id="Kick-n-Hat">
-            <audio src="./assets/Kick-n-Hat.mp3" class="clip" id="Z"></audio>
+            <audio src="./assets/Kick-n-Hat.mp3" class="clip" id="Z" data-name="Kick-n-Hat"></audio>
             Z
             </div>
            <div class="drum-pad" id="Kick">
-            <audio src="./assets/Kick.mp3" class="clip" id="X"></audio>
+            <audio src="./assets/Kick.mp3" class="clip" id="X" data-name="Kick"></audio>
             X
             </div>
            <div class="drum-pad" id="Closed-HH">
-            <audio src="./assets/Closed-HH.mp3" class="clip" id="C"></audio>
+            <audio src="./assets/Closed-HH.mp3" class="clip" id="C" data-name="Closed-HH"></audio>
             C
             </div>
         </div>
         <div id="controls-wrap">
-            <div>volumen</div>
-            <p id="display">hola</p>
+            <div>
+                Volumen
+                <input id="volumeSlider" max="1" min="0" step="0.01" type="range" value="0.59">
+            </div>
+            <p id="display"></p>
         </div>
     </div>
 
