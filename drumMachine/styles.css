@@ -2,14 +2,15 @@
 
 body{
     font-family: 'Sigmar', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background-color: #ffd4d4;
+    letter-spacing: 2px;
 }
 
 #drum-machine{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffd4d4;
     margin: 1rem;
     padding: 1rem;
 }
@@ -44,6 +45,7 @@ body{
     background-color: #ff858d;
     margin: 1rem;
     padding: 1rem;
+    border-radius: 5px;
 }
 
 #display{
@@ -52,4 +54,28 @@ body{
     margin: 1rem;
     padding: 1rem;
     min-width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#volume-wrap{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    #drum-machine {
+        flex-direction: column;
+    }
+    #pad-wrap {
+        padding: 0.5rem; /* Agregamos esta regla */
+        font-size: 1.2rem; /* Agregamos esta regla */
+      }
+    
+      #controls-wrap{
+        padding: 0.5rem; /* Agregamos esta regla */
+        font-size: 1.2rem; /* Agregamos esta regla */
+      }
 }
