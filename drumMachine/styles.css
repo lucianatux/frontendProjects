@@ -5,14 +5,9 @@ body{
     font-size: 1.5rem;
     background-color: #ffd4d4;
     letter-spacing: 2px;
-}
-
-#drum-machine{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
-    padding: 1rem;
 }
 
 #pad-wrap{
@@ -20,8 +15,6 @@ body{
     color: beige;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
-    padding: 1rem;
     border-radius: 5px;
     box-shadow: black 3px 3px 5px;
     display: grid;
@@ -36,32 +29,19 @@ body{
   text-align: center;
   border-radius: 5px;
   border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #controls-wrap{
     background-color: #ff858d;
-    margin: 1rem;
-    padding: 1rem;
     border-radius: 5px;
 }
 
 #display{
     background-color: black;
     color: beige;
-    margin: 1rem;
-    padding: 1rem;
     min-width: 200px;
     text-align: center;
     border-radius: 5px;
-}
-
-#volume-wrap{
-    display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Para pantallas pequeñas */
