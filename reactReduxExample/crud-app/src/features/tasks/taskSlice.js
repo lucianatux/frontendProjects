@@ -25,8 +25,11 @@ export const taskSlice = createSlice({
     name: 'tasks',
     initialState,
     reducers: {
-
+        addTask: (state, action) => {
+            console.log(state, action);
+        }
     }
 })
 
+export const {addTask} = taskSlice.actions
 export default taskSlice.reducer

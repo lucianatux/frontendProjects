@@ -1,12 +1,16 @@
 //rfce
 //import {useSelector} from 'react-redux'
-import {useState} from 'react'
+import {useState} from 'react';
+import {useDispatch} from 'react-redux';
+import {addTask} from '../features/tasks/taskSlice';
 
 function TaskForm() {
   const [task, setTask] = useState({
     title: '',
     description: ''
   })
+
+  const dispatch = useDispatch();
 
   const handleChange = e => {
     //console.log(e.target.name, e.target.value);
@@ -19,6 +23,7 @@ function TaskForm() {
   const handleSubmit = e => {
     e.preventDefault();
     console.log(task);
+    dispatch(addTask('mi parametro'));
   }
 
   return (
