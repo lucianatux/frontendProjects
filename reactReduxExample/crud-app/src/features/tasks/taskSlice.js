@@ -29,9 +29,12 @@ export const taskSlice = createSlice({
             console.log(state, action);
             state.push(action.payload);
            //[...state, action.payload];
+        },
+        deleteTask: (state, action) => {
+            console.log(action);
         }
     }
 })
 
-export const {addTask} = taskSlice.actions
+export const {addTask, deleteTask} = taskSlice.actions
 export default taskSlice.reducer
