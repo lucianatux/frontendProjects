@@ -18,7 +18,7 @@ const handleDelete = (id) => {
         <h1>Tasks {tasks.length}</h1>
         <Link to='/create-task' className='bg-indigo-600 px-2 py-1 rounded-md text-sm' >Create Task</Link>
       </header>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {tasks.map(task =>(
           <div key={task.id} className='bg-neutral-800 p-4 rounded-md'>
             <header className='flex justify-between'>
