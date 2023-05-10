@@ -31,7 +31,11 @@ export const taskSlice = createSlice({
            //[...state, action.payload];
         },
         deleteTask: (state, action) => {
-            console.log(action);
+            const taskFound = state.find(task => task.id === action.payload);
+            console.log(taskFound);
+            if(taskFound){
+                state.splice(state.indexOf(taskFound),1);
+            }
         }
     }
 })
